@@ -29,33 +29,7 @@ namespace EmployeeWage
             int dailyWage = DailyHour * PerDailyWage;
             Console.WriteLine("employee is {0}  and daily wage is {1}",type, dailyWage);
         }
-        public static void FullOrPartTimeWage()
-        {
-            Random random = new Random();
-            int num = random.Next(3);
-            string type = "";
-            int PerDailyWage = 20;
-            int DailyHour = 0;
-            if (num == 1)
-            {
-                type ="fullTimeJob";
-                DailyHour = 8;
-
-            }
-            else if (num == 2)
-            {
-                type ="PartTimeJob";
-                DailyHour = 4;
-            }
-            else
-            {
-                type = "Absent";
-                DailyHour = 0;
-            }
-
-            int dailyWage = DailyHour * PerDailyWage;
-            Console.WriteLine("employee is {0}  and daily wage is {1}", type, dailyWage);
-        }
+        
     }
     
 }
